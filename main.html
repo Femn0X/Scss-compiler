@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Idk</title>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+        <div class="container flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-indigo-600">SCSS copmiler
+            </h1>
+            <p class="text-gray-600 text-center mb-4">copmile SCSS to CSS</p>
+            <div class="flex flex-col gap-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex flex-col">
+                        <label for="input-1" class="text-lg font-medium text-gray-700">Input (SCSS)</label>
+                        <textarea id="input-1" placeholder="Input" class="h-64 p-2 border rounded focus:ring-2 focus:ring-blue-300 font-mono" spellcheck="false"></textarea>
+                        <small class="text-gray-500">Live syntax highlighting below</small>
+                        <pre id="highlight-1" class="language-scss rounded mt-2 p-3 bg-white overflow-auto shadow-sm"><code class="language-scss" id="code-1"></code></pre>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="output-1" class="text-lg font-medium text-gray-700">Output (CSS)</label>
+                        <textarea id="output-1" placeholder="output" class="h-64 p-2 border rounded focus:ring-2 focus:ring-blue-300 font-mono" readonly spellcheck="false"></textarea>
+                        <div class="flex items-center justify-between mt-2">
+                            <button type="button" id="button-1" class="px-6 py-2 bg-indigo-500 text-white font-semibold rounded shadow hover:bg-indigo-600 focus:outline-none">Compile</button>
+                            <div>
+                                <button type="button" id="download-1" class="px-4 py-2 mr-2 bg-green-500 text-white rounded shadow hover:bg-green-600">Download CSS</button>
+                            </div>
+                        </div>
+                        <pre id="highlight-2" class="language-css rounded mt-2 p-3 bg-white overflow-auto shadow-sm"><code class="language-css" id="code-2"></code></pre>
+                    </div>
+                </div>
+                <div id="error-panel" class="hidden mt-2 p-3 bg-red-50 border-l-4 border-red-400 text-red-700 rounded"></div>
+            </div>
+        </div>
+        <!-- Prism for syntax highlighting -->
+        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" >
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
