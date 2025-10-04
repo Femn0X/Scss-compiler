@@ -1,5 +1,5 @@
 {
-  "name": "scss-compiler",
+  "name": " @Femn0X/SCSS-compiler",
   "version": "1.0.0",
   "description": "scss to css compiler",
   "main": "main.html",
@@ -7,5 +7,9 @@
     "test": "node test.js"
   },
   "author": "Femn0X",
-  "license": "open-source"
+  "license": "open-source",
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/Femn0X/Scss-compiler"
+  }
 }
