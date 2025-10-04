@@ -4,7 +4,7 @@
   "description": "scss to css compiler",
   "main": "main.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "author": "Femn0X",
   "license": "open-source"
