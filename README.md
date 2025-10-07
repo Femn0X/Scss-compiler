@@ -38,6 +38,9 @@ A simple web-based SCSS compiler that lets you write SCSS and instantly see the 
 - View the compiled CSS output in real time.
 - Download the CSS file when ready.
 
-## Technologies
-
-- SCSS
+##NPM Package
+use 
+```bash
+npm i @femn0x/sccs-compiler
+```
+to install the package
