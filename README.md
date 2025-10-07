@@ -32,13 +32,13 @@ A simple web-based SCSS compiler that lets you write SCSS and instantly see the 
 
 4. Open your browser at `http://localhost:3000`
 
-# Usage
+## Usage
 
 - Write your SCSS code in the editor.
 - View the compiled CSS output in real time.
 - Download the CSS file when ready.
 
-##NPM Package
+## NPM Package
 use 
 ```bash
 npm i @femn0x/sccs-compiler
